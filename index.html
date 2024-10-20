@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding_Challenge_10</title>
+    <title>Product Pricing</title>
+
 </head>
-<body>
-    <h1>Inventory_Management_System</h1>
-    <script src="E-commerce_Event_Driven_Product_Management.js"></script>
+<body bgcolor="#F5F5DC"> <!--background color added-->
+    <h1><center><font color ="#A3A32F"><i>Retail Store</i></color></center></h1></font>
+    <hr color="#362624">
+       
+    <!--Task 1: Setup Product HTML Structure-->
+    <h2 id="product-name"><font color ="#5C413D">Cargo Skirt</font></h2> <!--product name with id 'product-name'-->
+    <p id="product-price"><font color ="#5C413D">$30</font></p> <!--product price with id 'product-price'-->
+    
+    <p id="inventory-count"></p>
+    <label for="product-size"><font color ="#5C413D">Select Size:</font></label>
+    <select id="product-size"> <!-- product size options with id 'product-size' -->
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+
+    <p id="inventory-count"></p> <!-- Inventory count -->
+    <button id="purchase-button" class="purchase-button">Purchase</button>
+
+    <script src="main.js"></script>
+    
 </body>
 </html>
