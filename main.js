@@ -31,11 +31,11 @@ purchaseButton.addEventListener("click", () => {
 
     // Check if the product is available
     if (stock > 0) {
-        ("Thank you for your purchase! Your item has been successfully added to the cart.");
+        ("Thank you for your purchase! Item has been  added to the cart.");
         stockAvailability[selectedSize].stock--; // Decrease stock by 1 after purchase
         updateInventory(); // Update the inventory after the purchase
     } else {
-        ("Sorry, this product is out of stock and cannot be purchased.");
+        ("Sorry, this product is out of stock .");
     }
 });
 purchaseButton.addEventListener("click", () => {
@@ -44,8 +44,8 @@ purchaseButton.addEventListener("click", () => {
 
     // Check if the product is available before proceeding
     if (stockStatus === "in-stock") {
-        alert("Thank you for your purchase! Your item has been successfully added to the cart.");
+        ("Thank you for your purchase! Item has been  added to the cart.");
     } else if (stockStatus === "out-of-stock") {
-        alert("Sorry, this product is out of stock and cannot be purchased.");
+        ("Sorry, this product is out of stock .");
     }
 });
