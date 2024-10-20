@@ -24,3 +24,17 @@ function updateInventory() {
         inventoryCount.textContent = "Out of Stock"; // Display out of stock message
     }
 }
+// Add event listener for the purchase button (checkout event)
+purchaseButton.addEventListener("click", () => {
+    const selectedSize = sizeSelector.value;
+    const { stock } = stockAvailability[selectedSize];
+
+    // Check if the product is available
+    if (stock > 0) {
+        ("Thank you for your purchase! Your item has been successfully added to the cart.");
+        stockAvailability[selectedSize].stock--; // Decrease stock by 1 after purchase
+        updateInventory(); // Update the inventory after the purchase
+    } else {
+        ("Sorry, this product is out of stock and cannot be purchased.");
+    }
+});
